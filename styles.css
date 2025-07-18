@@ -1,0 +1,195 @@
+body {
+  scroll-padding-top: 70px; /* adjust based on navbar height */
+}
+
+/* Sidebar styling */
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+}
+
+/* Hide sidebar on mobile */
+@media (max-width: 767.98px) {
+  #sidebar {
+    display: none;
+  }
+}
+
+/* Sidebar links hover */
+#sidebar .components a {
+  transition: background 0.2s ease;
+}
+#sidebar .components a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+/* Avatar ring */
+.avatar-ring {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(to right, #00e676, #00c853);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-ring img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* -----------------------user section------------------------------- */
+/* Card headers */
+.card-header {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Tables, lists */
+.card-body ul li {
+  font-size: 0.95rem;
+}
+/* Active sidebar link */
+#sidebar .components .active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #0d6efd;
+}
+/* ----------------------------settings section---------------- */
+/* Sidebar active item */
+#sidebar .components .active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #0d6efd;
+}
+
+/* Rounded avatar */
+#avatarPreview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #0d6efd;
+}
+
+/* Tab transitions */
+.tab-pane {
+  transition: all 0.3s ease;
+}
+
+/* Smooth form labels */
+.form-label {
+  font-weight: 500;
+}
+/* -----------------reprts section------------ */
+#sidebar .components .active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #0d6efd;
+}
+
+/* Static Chart */
+.chart-placeholder {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.chart-placeholder .bar {
+  width: 30px;
+  background-color: #0d6efd;
+  border-radius: 4px 4px 0 0;
+  transition: 0.3s;
+}
+
+.chart-placeholder .bar:hover {
+  background-color: #0b5ed7;
+  transform: scaleY(1.05);
+}
+/* --------------------login section------------- */
+body {
+  background: #f8f9fa;
+}
+
+.card {
+  border-radius: 16px;
+}
+
+.input-group-text {
+  background-color: #f1f1f1;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+/* ----------------------------myaccount section--------------- */
+#wrapper {
+  min-height: 100vh;
+}
+
+#sidebar {
+  width: 220px;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+#wrapper #page-content-wrapper {
+  flex-grow: 1;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.card-header {
+  border-bottom: 1px solid #eee;
+}
+
+/* ----------------------------------------network section------------------------------------------------ */
+#wrapper {
+  min-height: 100vh;
+}
+
+#sidebar {
+  width: 220px;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+#wrapper #page-content-wrapper {
+  flex-grow: 1;
+}
+
+.card {
+  border-radius: 1rem;
+}
+/* ------------------store section------------------- */
+#wrapper {
+  min-height: 100vh;
+}
+
+#sidebar {
+  width: 220px;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+#wrapper #page-content-wrapper {
+  flex-grow: 1;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.card img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Authentication | Gym Admin Panel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="auth.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container auth-container d-flex flex-column flex-md-row">
+    
+    <!-- Left Branding Side -->
+    <div class="col-md-6 auth-left d-flex flex-column justify-content-center">
+      <h2>Welcome Back, Champion! 🏋️</h2>
+      <p class="mt-3">Manage your fitness empire, track inventory, connect with your team — all in one place.</p>
+    </div>
+
+    <!-- Right Form Side -->
+    <div class="col-md-6 p-4">
+
+      <!-- Tabs -->
+      <input type="radio" id="tab-login" name="auth-tab" checked />
+      <input type="radio" id="tab-signup" name="auth-tab" />
+      <input type="radio" id="tab-forgot" name="auth-tab" />
+      <div class="tabs auth-tabs">
+        <label for="tab-login">Login</label>
+        <label for="tab-signup">Sign Up</label>
+        <label for="tab-forgot">Forgot?</label>
+      </div>
+
+      <!-- Login Tab -->
+      <div class="tab-content tab-login">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" required />
+          </div>
+          <button class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+
+      <!-- Sign Up Tab -->
+      <div class="tab-content tab-signup">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Create Password</label>
+            <input type="password" class="form-control" required />
+          </div>
+          <button class="btn btn-success w-100">Create Account</button>
+        </form>
+      </div>
+
+      <!-- Forgot Tab -->
+      <div class="tab-content tab-forgot">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Email to reset password</label>
+            <input type="email" class="form-control" required />
+          </div>
+          <button class="btn btn-warning w-100">Send Reset Link</button>
+        </form>
+      </div>
+<!-- Go Back to Dashboard Button -->
+<div class="text-center mt-4">
+  <a href="admin.html" class="go-back-btn">
+    ← Return to Dashboard
+  </a>
+</div>
+
+    </div>
+  </div>
+
+</body>
+</html>

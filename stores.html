@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gym Gear Store - Admin Panel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="store.css" />
+</head>
+<body class="bg-light">
+  <nav id="sidebar" class="bg-dark text-white">
+            <div class="sidebar-header p-4">
+                <h4 class="mb-0">AdminPanel</h4>
+            </div>
+            <ul class="list-unstyled components px-2">
+                <li><a href="admin.html" class="text-white d-block py-2 px-3"><i
+                            class="fas fa-tachometer-alt me-2"></i>Dashboard</a></li>
+                <li><a href="users.html" class="text-white d-block py-2 px-3"><i class="fas fa-user me-2"></i>Users</a>
+                </li>
+                <li><a href="setting.html" class="text-white d-block py-2 px-3"><i
+                            class="fas fa-cog me-2"></i>Settings</a></li>
+                <li><a href="reports.html" class="text-white d-block py-2 px-3"><i
+                            class="fas fa-chart-bar me-2"></i>Reports</a>
+                </li>
+                <li><a href="orders.html" class="text-white d-block py-2 px-3"><i
+                            class="fas fa-sign-out-alt me-2"></i>Orders</a>
+                </li>
+            </ul>
+        </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">GymStore Admin</a>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <section class="bg-primary text-white py-5 text-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Workout Gear Store</h1>
+      <p class="lead mb-0">Manage your fitness product listings and inventory</p>
+    </div>
+  </section>
+
+  <!-- Store Stats -->
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-center border-0 shadow-sm">
+          <div class="card-body">
+            <h6 class="text-muted">Products Listed</h6>
+            <h3>120</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center border-0 shadow-sm">
+          <div class="card-body">
+            <h6 class="text-muted">Total Orders</h6>
+            <h3>540</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center border-0 shadow-sm">
+          <div class="card-body">
+            <h6 class="text-muted">Monthly Revenue</h6>
+            <h3>$12,480</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="row mt-5">
+      <div class="col-md-4 mb-3">
+        <input type="text" class="form-control" placeholder="Search products...">
+      </div>
+      <div class="col-md-4 mb-3">
+        <select class="form-select">
+          <option selected>All Categories</option>
+          <option>Apparel</option>
+          <option>Equipment</option>
+          <option>Supplements</option>
+        </select>
+      </div>
+      <div class="col-md-4 mb-3">
+        <select class="form-select">
+          <option selected>Availability</option>
+          <option>In Stock</option>
+          <option>Out of Stock</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="row mt-4 g-4">
+      <!-- Product 1 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card product-card shadow-sm border-0 h-100">
+          <img src="https://via.placeholder.com/300x200?text=Weightlifting+Belt" class="card-img-top" alt="Weightlifting Belt">
+          <div class="card-body">
+            <h6 class="fw-bold">Weightlifting Belt</h6>
+            <p class="text-muted small mb-1">Equipment</p>
+            <h5 class="text-primary">$39.99</h5>
+            <span class="badge bg-success">In Stock</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card product-card shadow-sm border-0 h-100">
+          <img src="https://via.placeholder.com/300x200?text=Pre-Workout+Formula" class="card-img-top" alt="Pre-Workout">
+          <div class="card-body">
+            <h6 class="fw-bold">Pre-Workout Formula</h6>
+            <p class="text-muted small mb-1">Supplements</p>
+            <h5 class="text-primary">$29.00</h5>
+            <span class="badge bg-warning text-dark">Low Stock</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card product-card shadow-sm border-0 h-100">
+          <img src="https://via.placeholder.com/300x200?text=Gym+Tank+Top" class="card-img-top" alt="Tank Top">
+          <div class="card-body">
+            <h6 class="fw-bold">Gym Tank Top</h6>
+            <p class="text-muted small mb-1">Apparel</p>
+            <h5 class="text-primary">$18.50</h5>
+            <span class="badge bg-success">In Stock</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card product-card shadow-sm border-0 h-100">
+          <img src="https://via.placeholder.com/300x200?text=Kettlebell+20kg" class="card-img-top" alt="Kettlebell">
+          <div class="card-body">
+            <h6 class="fw-bold">Kettlebell 20kg</h6>
+            <p class="text-muted small mb-1">Equipment</p>
+            <h5 class="text-primary">$65.00</h5>
+            <span class="badge bg-danger">Out of Stock</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- /.container -->
+
+</body>
+</html>
